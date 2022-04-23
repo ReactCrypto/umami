@@ -109,6 +109,4 @@ docker-compose pull
 docker-compose up --force-recreate
 ```
 
-## License
-
-MIT
+bug: did not auto create database table when deploy in vercel
