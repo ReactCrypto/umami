@@ -111,3 +111,4 @@ docker-compose up --force-recreate
 
 bug: did not auto create database table when deploy in vercel
 log: change to postgresql
+branch: vercel is outdated
