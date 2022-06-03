@@ -30,13 +30,13 @@ const validate = ({ username, password }) => {
   return errors;
 };
 
-export default function LoginForm() {
+export default function SignForm() {
   const { post } = useApi();
   const router = useRouter();
   const [message, setMessage] = useState();
 
   const handleSubmit = async ({ username, password }) => {
-    const { ok, status, data } = await post('/auth/login', {
+    const { ok, status, data } = await post('/auth/sign', {
       username,
       password,
     });
@@ -100,11 +100,6 @@ export default function LoginForm() {
             <FormButtons>
               <Button type="submit" variant="action">
                 <FormattedMessage id="label.login" defaultMessage="Login" />
-              </Button>
-            </FormButtons>
-            <FormButtons>
-              <Button type="submit" variant="action">
-                <FormattedMessage id="label.sign" defaultMessage="SignUp" />
               </Button>
             </FormButtons>
             <FormMessage>{message}</FormMessage>
