@@ -77,8 +77,17 @@ export default function SignForm() {
           <Form>
             <div className={styles.header}>
               <Icon icon={<Logo />} size="xlarge" className={styles.icon} />
-              <h1 className="center">umami</h1>
+              <h1 className="center">极光云</h1>
             </div>
+            <FormRow>
+              <label htmlFor="account">
+                <FormattedMessage id="label.account" defaultMessage="邮箱" />
+              </label>
+              <div>
+                <Field name="account" type="text" />
+                <FormError name="account" />
+              </div>
+            </FormRow>
             <FormRow>
               <label htmlFor="username">
                 <FormattedMessage id="label.username" defaultMessage="Username" />
