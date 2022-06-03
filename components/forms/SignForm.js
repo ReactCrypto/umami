@@ -11,15 +11,14 @@ import FormLayout, {
 } from 'components/layout/FormLayout';
 import Icon from 'components/common/Icon';
 import useApi from 'hooks/useApi';
-import { setItem } from 'lib/web';
-import { AUTH_TOKEN } from 'lib/constants';
-import { setUser } from 'store/app';
 import Logo from 'assets/logo.svg';
 import styles from './LoginForm.module.css';
 
-const validate = ({ username, password }) => {
+const validate = ({ email, username, password }) => {
   const errors = {};
-
+  if (!email) {
+    errors.email = <FormattedMessage id="label.required" defaultMessage="Required" />;
+  }
   if (!username) {
     errors.username = <FormattedMessage id="label.required" defaultMessage="Required" />;
   }
@@ -35,20 +34,15 @@ export default function SignForm() {
   const router = useRouter();
   const [message, setMessage] = useState();
 
-  const handleSubmit = async ({ username, password }) => {
+  const handleSubmit = async ({ email, username, password }) => {
     const { ok, status, data } = await post('/auth/sign', {
+      email,
       username,
       password,
     });
 
     if (ok) {
-      setItem(AUTH_TOKEN, data.token);
-
-      setUser(data.user);
-
-      await router.push('/');
-
-      return null;
+      router.push('/login');
     } else {
       setMessage(
         status === 401 ? (
@@ -67,6 +61,7 @@ export default function SignForm() {
     <FormLayout className={styles.login}>
       <Formik
         initialValues={{
+          email: '',
           username: '',
           password: '',
         }}
@@ -80,12 +75,12 @@ export default function SignForm() {
               <h1 className="center">极光云</h1>
             </div>
             <FormRow>
-              <label htmlFor="account">
-                <FormattedMessage id="label.account" defaultMessage="邮箱" />
+              <label htmlFor="email">
+                <FormattedMessage id="label.email" defaultMessage="邮箱" />
               </label>
               <div>
-                <Field name="account" type="text" />
-                <FormError name="account" />
+                <Field name="email" type="text" />
+                <FormError name="email" />
               </div>
             </FormRow>
             <FormRow>
