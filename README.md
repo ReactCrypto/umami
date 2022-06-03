@@ -1,6 +1,6 @@
 # umami
 
-Umami is a simple, fast, privacy-focused alternative to Google Analytics.
+Umami is a alternative to Google Analytics.
 
 ## Getting started
 
