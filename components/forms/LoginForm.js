@@ -63,6 +63,10 @@ export default function LoginForm() {
     }
   };
 
+  function handleSign() {
+    router.push('/sign');
+  }
+
   return (
     <FormLayout className={styles.login}>
       <Formik
@@ -104,8 +108,8 @@ export default function LoginForm() {
                 </Button>
               </FormButtons>
               <FormButtons>
-                <Button type="submit" variant="action">
-                  <FormattedMessage id="label.sign" defaultMessage="SignUp" />
+                <Button onClick={handleSign} variant="action">
+                  <FormattedMessage id="label.sign" defaultMessage="Signup" />
                 </Button>
               </FormButtons>
             </FormRow>
