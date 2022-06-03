@@ -97,16 +97,18 @@ export default function LoginForm() {
                 <FormError name="password" />
               </div>
             </FormRow>
-            <FormButtons>
-              <Button type="submit" variant="action">
-                <FormattedMessage id="label.login" defaultMessage="Login" />
-              </Button>
-            </FormButtons>
-            <FormButtons>
-              <Button type="submit" variant="action">
-                <FormattedMessage id="label.sign" defaultMessage="SignUp" />
-              </Button>
-            </FormButtons>
+            <FormRow>
+              <FormButtons>
+                <Button type="submit" variant="action">
+                  <FormattedMessage id="label.login" defaultMessage="Login" />
+                </Button>
+              </FormButtons>
+              <FormButtons>
+                <Button type="submit" variant="action">
+                  <FormattedMessage id="label.sign" defaultMessage="SignUp" />
+                </Button>
+              </FormButtons>
+            </FormRow>
             <FormMessage>{message}</FormMessage>
           </Form>
         )}
