@@ -61,6 +61,7 @@
   "label.unknown": "未知",
   "label.username": "用户名",
   "label.view-details": "查看更多",
+  "label.sign": "注册",
   "label.websites": "网站",
   "message.active-users": "当前在线 {x} 人",
   "message.confirm-delete": "你确定要删除 {target} 吗？",

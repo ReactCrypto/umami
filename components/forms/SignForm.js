@@ -99,7 +99,7 @@ export default function SignForm() {
             </FormRow>
             <FormButtons>
               <Button type="submit" variant="action">
-                <FormattedMessage id="label.login" defaultMessage="Login" />
+                <FormattedMessage id="label.sign" defaultMessage="注册" />
               </Button>
             </FormButtons>
             <FormMessage>{message}</FormMessage>
