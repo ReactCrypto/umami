@@ -8,7 +8,7 @@ export default function SingupPage() {
   }
 
   return (
-    <Layout title="login" header={false} footer={false} center>
+    <Layout title="sign" header={false} footer={false} center>
       <SignForm />
     </Layout>
   );

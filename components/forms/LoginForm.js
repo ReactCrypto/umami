@@ -64,7 +64,7 @@ export default function LoginForm() {
   };
 
   function handleSign() {
-    router.push('/signup');
+    router.push('/sign');
   }
 
   return (
