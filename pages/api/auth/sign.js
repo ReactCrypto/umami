@@ -3,9 +3,9 @@ import { hashPassword } from 'lib/crypto';
 import { ok, unauthorized, badRequest } from 'lib/response';
 
 export default async (req, res) => {
-  const { account, username, password } = req.body;
+  const { email, username, password } = req.body;
 
-  if (!username || !password || !account) {
+  if (!username || !password || !email) {
     return badRequest(res);
   }
 
