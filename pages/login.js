@@ -8,7 +8,7 @@ export default function LoginPage() {
   }
 
   return (
-    <Layout title="login" header={false} footer={false} center>
+    <Layout title="login" header={false} footer={false} background="back.png" center>
       <LoginForm />
     </Layout>
   );

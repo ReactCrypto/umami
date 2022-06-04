@@ -81,7 +81,7 @@ export default function LoginForm() {
           <Form>
             <div className={styles.header}>
               <Icon icon={<Logo />} size="xlarge" className={styles.icon} />
-              <h1 className="center">umami</h1>
+              <h1 className="center">极光云</h1>
             </div>
             <FormRow>
               <label htmlFor="username">
@@ -104,12 +104,12 @@ export default function LoginForm() {
             <FormRow>
               <FormButtons>
                 <Button type="submit" variant="action">
-                  <FormattedMessage id="label.login" defaultMessage="Login" />
+                  <FormattedMessage id="label.login" defaultMessage="登录" />
                 </Button>
               </FormButtons>
               <FormButtons>
                 <Button onClick={handleSign} variant="action">
-                  <FormattedMessage id="label.sign" defaultMessage="Signup" />
+                  <FormattedMessage id="label.sign" defaultMessage="注册" />
                 </Button>
               </FormButtons>
             </FormRow>
