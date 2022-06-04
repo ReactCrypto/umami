@@ -16,6 +16,7 @@ import { AUTH_TOKEN } from 'lib/constants';
 import { setUser } from 'store/app';
 import Logo from 'assets/logo.svg';
 import styles from './LoginForm.module.css';
+import Back from 'public/back.png';
 
 const validate = ({ username, password }) => {
   const errors = {};
@@ -114,6 +115,10 @@ export default function LoginForm() {
               </FormButtons>
             </FormRow>
             <FormMessage>{message}</FormMessage>
+            <div className={styles.header}>
+              <Icon icon={<Back />} size="xlarge" className={styles.icon} />
+              <h1 className="center"></h1>
+            </div>
           </Form>
         )}
       </Formik>
