@@ -12,7 +12,7 @@ export default function LoginPage() {
     <Layout title="login" header={false} footer={false} center>
       <LoginForm />
       <div style={{ textAlign: 'center', padding: '30px 0px' }}>
-        <Image src="/back.png" width={650} height={360} alt="万兆带宽" />
+        <Image src="/back.jpg" width={6000} height={3375} alt="万兆带宽" />
       </div>
     </Layout>
   );
