@@ -1,7 +1,7 @@
 import React from 'react';
 import Layout from 'components/layout/Layout';
 import LoginForm from 'components/forms/LoginForm';
-import Back from 'public/back.png';
+import Back from 'assets/back.svg';
 
 export default function LoginPage() {
   if (process.env.DISABLE_LOGIN) {
