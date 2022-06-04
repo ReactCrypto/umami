@@ -8,12 +8,21 @@ export default function LoginPage() {
     return null;
   }
 
+  var sectionStyle = {
+    width: '100%',
+
+    height: '400px',
+
+    // makesure here is String确保这里是一个字符串，以下是es6写法
+
+    backgroundImage: `url(${Back})`,
+  };
+
   return (
-    <Layout title="login" header={false} footer={false} center>
-      <div>
-        <backgrond src={Back} />
-      </div>
-      <LoginForm />
-    </Layout>
+    <div style={sectionStyle}>
+      <Layout title="login" header={false} footer={false} center>
+        <LoginForm />
+      </Layout>
+    </div>
   );
 }
