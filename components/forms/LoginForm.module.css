@@ -21,3 +21,7 @@
 .header h1 {
   margin: 12px 0;
 }
+
+.back {
+  background-image: url('back.png');
+}
