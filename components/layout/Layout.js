@@ -3,7 +3,7 @@ import Head from 'next/head';
 import Header from 'components/layout/Header';
 import Footer from 'components/layout/Footer';
 import useLocale from 'hooks/useLocale';
-import Back from 'public/back.png';
+import Back from 'assets/back.svg';
 
 export default function Layout({ title, children, header = true, footer = true, background }) {
   const { dir } = useLocale();
