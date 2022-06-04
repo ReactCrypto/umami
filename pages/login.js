@@ -19,10 +19,9 @@ export default function LoginPage() {
   };
 
   return (
-    <div style={sectionStyle}>
-      <Layout title="login" header={false} footer={false} center>
-        <LoginForm />
-      </Layout>
-    </div>
+    <Layout title="login" header={false} footer={false} center>
+      <LoginForm />
+      <div style={sectionStyle} />
+    </Layout>
   );
 }
