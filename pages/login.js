@@ -9,7 +9,10 @@ export default function LoginPage() {
   }
 
   return (
-    <Layout title="login" header={false} footer={false} background={Back} center>
+    <Layout title="login" header={false} footer={false} center>
+      <div>
+        <backgrond src={Back} />
+      </div>
       <LoginForm />
     </Layout>
   );
