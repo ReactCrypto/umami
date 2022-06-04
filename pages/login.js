@@ -2,7 +2,7 @@ import React from 'react';
 import Layout from 'components/layout/Layout';
 import LoginForm from 'components/forms/LoginForm';
 import Back from 'assets/back.svg';
-import styles from './LoginForm.module.css';
+import styles from 'components/forms/LoginForm.module.css';
 import Icon from 'components/common/Icon';
 
 export default function LoginPage() {
