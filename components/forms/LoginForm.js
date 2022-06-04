@@ -16,7 +16,7 @@ import { AUTH_TOKEN } from 'lib/constants';
 import { setUser } from 'store/app';
 import Logo from 'assets/logo.svg';
 import styles from './LoginForm.module.css';
-import Back from 'public/back.png';
+import Back from 'assert/back.svg';
 
 const validate = ({ username, password }) => {
   const errors = {};
