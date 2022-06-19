@@ -68,7 +68,7 @@ export default function LoginForm() {
   }
 
   return (
-    <FormLayout className={styles.login}>
+    <FormLayout className={styles.background}>
       <Formik
         initialValues={{
           username: '',
