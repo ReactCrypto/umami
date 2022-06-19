@@ -10,11 +10,13 @@ export default function LoginPage() {
   }
 
   return (
-    <Layout title="login" header={false} footer={false} center className={styles.background}>
-      <LoginForm />
-      <div style={{ textAlign: 'center', padding: '30px 0px' }}>
-        <Image src="/back.jpg" width={6000} height={3375} alt="万兆带宽" />
-      </div>
-    </Layout>
+    <div className={styles.background}>
+      <Layout title="login" header={false} footer={false} center>
+        <LoginForm />
+        <div style={{ textAlign: 'center', padding: '30px 0px' }}>
+          <Image src="/back.jpg" width={6000} height={3375} alt="万兆带宽" />
+        </div>
+      </Layout>
+    </div>
   );
 }
