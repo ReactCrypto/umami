@@ -10,13 +10,11 @@
 }
 
 .row {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  position: relative;
-  margin-bottom: 20px;
-  line-height: 1.8;
-  padding: 0 20px;
+  position: absolute;
+  width: 819px;
+  height: 81px;
+  left: 391px;
+  top: 774px;
 }
 
 .row > div {
