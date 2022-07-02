@@ -101,17 +101,18 @@ export default function LoginForm() {
                 <FormError name="password" />
               </div>
             </FormRow>
-
-            <FormButtons>
-              <Button type="submit" variant="action">
-                <FormattedMessage id="label.login" defaultMessage="登录" />
-              </Button>
-            </FormButtons>
-            <FormButtons>
-              <Button onClick={handleSign} variant="action">
-                <FormattedMessage id="label.sign" defaultMessage="注册" />
-              </Button>
-            </FormButtons>
+            <div>
+              <FormButtons>
+                <Button type="submit" variant="action">
+                  <FormattedMessage id="label.login" defaultMessage="登录" />
+                </Button>
+              </FormButtons>
+              <FormButtons>
+                <Button onClick={handleSign} variant="action">
+                  <FormattedMessage id="label.sign" defaultMessage="注册" />
+                </Button>
+              </FormButtons>
+            </div>
 
             <FormMessage>{message}</FormMessage>
           </Form>
