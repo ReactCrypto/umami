@@ -10,11 +10,11 @@
 }
 
 .row {
-  position: absolute;
-  width: 819px;
+  position: relative;
+  width: 30%;
   height: 81px;
   left: 391px;
-  top: 5%;
+  top: 25%;
 }
 
 .row > div {
