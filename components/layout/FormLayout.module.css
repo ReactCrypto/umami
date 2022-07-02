@@ -12,7 +12,7 @@
 .row {
   color: white;
   position: relative;
-  width: 50%;
+  width: 75%;
   height: 81px;
   left: 25%;
   top: 35%;
@@ -30,6 +30,7 @@
 
 .buttons {
   display: flex;
+  justify-content: center;
   margin-top: 20px;
 }
 
