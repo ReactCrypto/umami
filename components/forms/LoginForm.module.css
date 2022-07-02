@@ -25,7 +25,19 @@
 }
 
 .header {
-  margin-bottom: 30px;
+  position: absolute;
+  width: 765px;
+  height: 144px;
+  left: 418px;
+  top: 185px;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 96px;
+  line-height: 144px;
+  /* identical to box height */
+
+  color: #ffffff;
 }
 
 .header h1 {
