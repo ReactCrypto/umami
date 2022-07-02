@@ -101,7 +101,7 @@ export default function LoginForm() {
                 <FormError name="password" />
               </div>
             </FormRow>
-            <div>
+            <div className={styles.login}>
               <FormButtons>
                 <Button type="submit" variant="action">
                   <FormattedMessage id="label.login" defaultMessage="登录" />
