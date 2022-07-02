@@ -84,7 +84,7 @@ export default function LoginForm() {
               <h1 className="center">极光云</h1>
             </div>
             <FormRow>
-              <label htmlFor="username" style="color:white;">
+              <label htmlFor="username">
                 <FormattedMessage id="label.username" defaultMessage="Username" />
               </label>
               <div>
@@ -93,7 +93,7 @@ export default function LoginForm() {
               </div>
             </FormRow>
             <FormRow>
-              <label htmlFor="password" style="color:white;">
+              <label htmlFor="password">
                 <FormattedMessage id="label.password" defaultMessage="Password" />
               </label>
               <div>
