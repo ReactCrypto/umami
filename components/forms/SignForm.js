@@ -56,6 +56,9 @@ export default function SignForm() {
       );
     }
   };
+  function handleBack() {
+    router.push('/login');
+  }
 
   return (
     <FormLayout className={styles.login}>
@@ -101,6 +104,11 @@ export default function SignForm() {
                 <FormError name="password" />
               </div>
             </FormRow>
+            <FormButtons>
+              <Button onClick={handleBack} variant="action">
+                <FormattedMessage id="label.back" defaultMessage="返回" />
+              </Button>
+            </FormButtons>
             <FormButtons>
               <Button type="submit" variant="action">
                 <FormattedMessage id="label.sign" defaultMessage="注册" />
