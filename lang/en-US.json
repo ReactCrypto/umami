@@ -32,7 +32,7 @@
   "label.last-days": "Last {x} days",
   "label.last-hours": "Last {x} hours",
   "label.logged-in-as": "Logged in as {username}",
-  "label.login": "Login",
+  "label.login": "登录",
   "label.logout": "Logout",
   "label.more": "More",
   "label.name": "Name",
