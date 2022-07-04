@@ -107,7 +107,7 @@ export default function SignForm() {
             <div className={styles.button}>
               <FormButtons>
                 <Button onClick={handleBack} variant="action">
-                  <FormattedMessage id="label.back" defaultMessage="返回" />
+                  <FormattedMessage id="label.backup" defaultMessage="返回" />
                 </Button>
               </FormButtons>
               <FormButtons>

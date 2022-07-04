@@ -104,7 +104,7 @@ export default function LoginForm() {
             <div className={styles.button}>
               <FormButtons>
                 <Button type="submit" variant="action">
-                  <FormattedMessage id="label.login" defaultMessage="登录" />
+                  <FormattedMessage id="label.signIn" defaultMessage="登录" />
                 </Button>
               </FormButtons>
               <FormButtons>
