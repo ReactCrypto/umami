@@ -21,7 +21,7 @@ export default function UpdateNotice() {
     forceUpdate();
   }
 
-  if (!hasUpdate || checked) {
+  if (!hasUpdate || checked || hasUpdate) {
     return null;
   }
 
